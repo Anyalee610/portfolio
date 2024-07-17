@@ -1,0 +1,28 @@
+@import '../../vars.css';
+
+.nav {
+  display: flex;
+  justify-content: center;
+  background-color: var(--casper);
+  
+}
+
+.navLink {
+  font-size: 1.2em;
+  margin: 0, 15px;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--cotton-candy);
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.navLink:hover {
+  background-color: var(--lilac);
+  color: white;
+}
+@media (max-width: 788px) {
+    .nav {
+        flex-wrap: wrap;
+      }
+}

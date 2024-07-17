@@ -1,0 +1,60 @@
+@import '../../vars.css';
+
+.experienceContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  position: relative;
+}
+
+.experienceItem {
+  position: relative;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 5px solid #ffff;
+  border-radius: 10px;
+
+  background-color: var(--casper);
+  overflow: hidden;
+}
+
+.experienceSummary {
+  cursor: pointer;
+  font-weight: bold;
+  background-color: var(casper); /* Match item background */
+}
+
+.experienceDetails {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 600px;
+  background-color: var(--lilac);
+  border: 1px solid var(--martini);
+  border-radius: 10px;
+  padding: 20px;
+  display: none;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.experienceItem:hover .experienceDetails {
+  display: block;
+}
+
+.experienceDetails ul {
+  list-style: none;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .experienceContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .experienceDetails {
+    width: 90%;
+  }
+}

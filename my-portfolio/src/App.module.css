@@ -1,0 +1,31 @@
+@import './vars.css';
+
+
+
+body {
+  background-color: var(--cotton-candy);
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+section {
+  width: 100%;
+  padding: 20px;
+  border-bottom: 20px solid var(--lilac);
+}
+
+
+h1, h2 {
+  color: #333;
+}
