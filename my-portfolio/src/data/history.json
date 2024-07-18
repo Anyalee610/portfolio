@@ -1,0 +1,61 @@
+[
+  {
+    "role": "Product Support Specialist",
+    "organization": "ClassLink",
+    "startDate": "June, 2024",
+    "endDate": "Present",
+    "imageSrc": "jobs/classlink.png",
+    "experiences": [
+      "Provide support and assistance to ClassLink users.",
+      "Diagnose and resolve software, hardware, and network problems.",
+      "Collaborate with technical teams to resolve complex issues."
+    ]
+  },
+  {
+    "role": "Admissions Ambassador",
+    "organization": "Marcy Lab School",
+    "startDate": "July, 2022",
+    "endDate": "Present",
+    "imageSrc": "jobs/marcy.png",
+    "experiences": [
+      "Completed training in communication skills.",
+      "Led technical sections of interview process for applicants.",
+      "Screened applicants for problem-solving skills and values alignment."
+    ]
+  },
+  {
+    "role": "Front Desk Receptionist",
+    "organization": "PaintBucket",
+    "startDate": "May, 2023",
+    "endDate": "August, 2023",
+    "imageSrc": "jobs/paintbucket.png",
+    "experiences": [
+      "Performed administrative duties to enhance efficiency.",
+      "Provided courteous customer service and guided customers.",
+      "Scheduled appointments and maintained an up-to-date calendar."
+    ]
+  },
+  {
+    "role": "Activity Specialist",
+    "organization": "Brooklyn Community Services",
+    "startDate": "October, 2021",
+    "endDate": "February, 2022",
+    "imageSrc": "jobs/BCS.png",
+    "experiences": [
+      "Managed a class of 5-10 students for tutoring and activities.",
+      "Monitored and tracked team tasks to ensure completion."
+    ]
+  },
+  {
+    "role": "Beauty Consultant",
+    "organization": "Target",
+    "startDate": "October, 2020",
+    "endDate": "October, 2021",
+    "imageSrc": "jobs/target.png",
+    "experiences": [
+      "Provided tailored recommendations for customers.",
+      "Maintained facility quality by stocking shelves and sweeping aisles.",
+      "Connected customers to effective skincare solutions."
+    ]
+  }
+]

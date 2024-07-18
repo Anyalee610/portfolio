@@ -74,3 +74,8 @@
   
 
   }
+  @media (max-width: 888px) {
+    .container h1{
+      font-size: 2em;
+   }
+  }

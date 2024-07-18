@@ -1,0 +1,43 @@
+[
+    {
+      "title": "HTML",
+      "imageSrc": "skills/HTML.png"
+    },
+    {
+      "title": "CSS",
+      "imageSrc": "skills/CSS.png"
+    },
+    {
+      "title": "React",
+      "imageSrc": "skills/React.png"
+    },
+    {
+      "title": "Node",
+      "imageSrc": "skills/Node.png"
+    },
+    {
+      "title": "Next JS",
+      "imageSrc": "skills/Next.js.png"
+    },
+    {
+      "title": "Express",
+      "imageSrc": "skills/Express.png"
+    },
+    {
+        "title": "Figma",
+        "imageSrc": "skills/Figma.png"
+    },
+    {
+        "title": "Firebase",
+        "imageSrc": "skills/Firebase.svg"
+    },
+    {
+        "title": "Postgres SQL",
+        "imageSrc": "skills/Postgre_SQL.png"
+    },
+    {
+        "title": "Python",
+        "imageSrc": "skills/Python.png"
+    }
+
+  ]

@@ -1,34 +1,63 @@
 import React, { useEffect, useState } from 'react';
-import experienceData from '../../data/experience.json';
+import history from '../../data/history.json';
 import styles from './Experience.module.css';
+import skills from "../../data/skills.json"
+import arrow from "../../../assets/arrow.png"; // Import the arrow image
+
+import { getImageUrl } from "../../utils";
 
 const Experience = () => {
-  const [experiences, setExperiences] = useState([]);
+  const [visibleItem, setVisibleItem] = useState(null);
 
-  useEffect(() => {
-    // Fetching the data from the JSON file (can also be used for remote fetching)
-    setExperiences(experienceData);
-  }, []);
+  const toggleVisibility = (id) => {
+    setVisibleItem(visibleItem === id ? null : id);
+  };
 
   return (
-    <section id="experience">
-      <h2>Work Experience</h2>
-      <div className={styles.experienceContainer}>
-        {experiences.map((experience, index) => (
-          <div className={styles.experienceItem} key={index}>
-            <div className={styles.experienceSummary}>
-              <h3>{experience.company}</h3>
-              <p>{experience.title} | {experience.date}</p>
-            </div>
-            <div className={styles.experienceDetails}>
-              <ul>
-                {experience.responsibilities.map((responsibility, idx) => (
-                  <li key={idx}>{responsibility}</li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        ))}
+    <section className={styles.container} id="experience">
+      <h2 className={styles.title}>Experience</h2>
+      <div className={styles.content}>
+        <div className={styles.skills}>
+          {skills.map((skill, id) => {
+            return (
+              <div key={id} className={styles.skill}>
+                <div className={styles.skillImageContainer}>
+                  <img src={getImageUrl(skill.imageSrc)} alt={skill.title} />
+                </div>
+                <p>{skill.title}</p>
+              </div>
+            );
+          })}
+        </div>
+        <ul className={styles.history}>
+          {history.map((historyItem, id) => {
+            return (
+              <li key={id} className={styles.historyItem}>
+                <img
+                  src={getImageUrl(historyItem.imageSrc)}
+                  alt={`${historyItem.organization} Logo`}
+                />
+                <div className={styles.historyItemDetails}>
+                  <h3>{`${historyItem.role}, ${historyItem.organization}`}</h3>
+                  <p>{`${historyItem.startDate} - ${historyItem.endDate}`}</p>
+                  <img
+                    src={arrow}
+                    alt="Toggle details"
+                    className={styles.arrow}
+                    onClick={() => toggleVisibility(id)}
+                  />
+                  {visibleItem === id && (
+                    <ul>
+                      {historyItem.experiences.map((experience, idx) => {
+                        return <li key={idx}>{experience}</li>;
+                      })}
+                    </ul>
+                  )}
+                </div>
+              </li>
+            );
+          })}
+        </ul>
       </div>
     </section>
   );

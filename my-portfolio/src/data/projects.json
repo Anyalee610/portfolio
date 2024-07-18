@@ -1,0 +1,28 @@
+[
+    {
+      "title": "Homeful",
+      "imageSrc": "projects/homeful.png",
+      "description": "A website that aims to provide homeless people access to essential information on shelters or rooms available in NYC.",
+      "skills": ["React", "Express", "Node"],
+      "demo": "https://youtu.be/s2rTmBhOs6k?feature=shared",
+      "source": "https://github.com/Homeful-Civic-Tech"
+    },
+    {
+      "title": "KokyETech",
+      "imageSrc": "projects/KokyETech.png",
+      "description": "A social media for software engineers to showcase and get inspired by other software engineers.",
+      "skills": ["React", "Express", "Node"],
+      "demo": "https://kokietech.netlify.app/",
+      "source": "https://github.com/Anyalee610/KokiETech"
+    },
+    {
+      "title": "EscaFoods",
+      "imageSrc": "projects/esca.png",
+      "description": "A website that showcases numerous recipes based on the client's preference.",
+      "skills": [ "Express", "API"],
+      "demo": "https://anyalee610.github.io/ESCA-FOODS/",
+      "source": "https://github.com/Anyalee610/ESCA-FOODS"
+    }
+    
+  ]
+  
